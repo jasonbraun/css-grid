@@ -34,7 +34,7 @@ h6 {
 .codepen {
   display: grid;
   grid-template-rows: auto 1fr 1fr auto;
-  height: 100vh;
+  height: 70vh;
   color: #fff;
 }
 
@@ -48,7 +48,7 @@ h6 {
   grid-template-columns: repeat(3, 1fr);
   background: #1d1f20;
   border-bottom: 14px solid #343436;
-  height: 50vh;
+  height: 30vh;
 }
 
 .editor {
@@ -104,6 +104,7 @@ h6 {
 
 .preview {
   display: grid;
+  height: 100vh;
 }
 
 /* Buttons */
