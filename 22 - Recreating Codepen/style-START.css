@@ -1,6 +1,7 @@
 :root {
   --gray: #343436;
 }
+
 html {
   box-sizing: border-box;
   font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma,
@@ -42,7 +43,24 @@ h6 {
   border: 1px solid #000;
 }
 
+.pen__author {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.pen__by {
+  color: grey;
+  font-size: 12px;
+  margin-right: 2px;
+  text-transform: uppercase;
+}
+
+.pen__details {
+  margin-top: 10px;
+}
+
 /* Editor! */
+
 .code {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -67,6 +85,8 @@ h6 {
   grid-gap: 5px;
   background: rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  color: lightgrey;
 }
 
 .editor__code {
@@ -87,9 +107,11 @@ h6 {
   font-size: 16px;
   line-height: 19px;
   color: #ffc600;
+  font-family: Monaco;
 }
 
 /* Pen Header */
+
 .pen {
   display: grid;
   grid-template-columns: 1fr;
@@ -108,18 +130,23 @@ h6 {
 }
 
 /* Buttons */
+
 .button {
   background: var(--gray);
   border: 0;
   color: #fff;
+  height: 44px;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
 }
 
 .button--small {
-  font-size: 12px;
-  padding: 4px;
+  font-size: 17px;
+  padding: 0;
+  height: 20px;
+  margin-right: 2px;
+  width: 25px;
 }
 
 .button--dirty:before {
